@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "aos": "^2.3.4",
+    "react-router-dom": "^7.6.3",
+    "swiper": "^11.2.10",
+    "yet-another-react-lightbox": "^3.23.4"
+  }
+}
