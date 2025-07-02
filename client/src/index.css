@@ -10,6 +10,7 @@ html, body, #root {
   box-sizing: border-box;
 }
 
+
 .hero-carousel {
   height: 100vh;
   width: 100%;
@@ -56,6 +57,9 @@ html, body, #root {
   font-size: 1.1rem;
 }
 
+
+
+
 .navbar {
   background-color: rgb(249, 245, 245);
   position: absolute;
@@ -93,22 +97,13 @@ html, body, #root {
   color: #ffd700;
 }
 
-.properties-section,
-.agents-section,
-.contact-section,
-.gallery-section {
+.properties-section {
   padding: 60px 20px;
+  background-color: #f5f5f5;
   text-align: center;
 }
 
-.properties-section {
-  background-color: #f5f5f5;
-}
-
-.properties-section h2,
-.agents-section h2,
-.contact-section h2,
-.gallery-section h2 {
+.properties-section h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
@@ -154,6 +149,17 @@ html, body, #root {
   margin-top: 10px;
 }
 
+.agents-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.agents-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
 .agent-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -193,7 +199,14 @@ html, body, #root {
 }
 
 .contact-section {
+  padding: 60px 20px;
   background-color: #f0f8ff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
 .contact-form {
@@ -240,6 +253,18 @@ html, body, #root {
   margin: 0;
 }
 
+.gallery-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -267,65 +292,8 @@ html, body, #root {
   transform: scale(1.05);
 }
 
-.filter-buttons {
+.filter-buttons{
   margin-bottom: 10px;
   position: relative;
   right: 0;
-}
-
-@media (max-width: 768px) {
-  .slide {
-    padding: 20px;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .slide-info {
-    max-width: 90%;
-    padding: 10px;
-  }
-
-  .slide-info h1 {
-    font-size: 1.8rem;
-  }
-
-  .slide-info p {
-    font-size: 1rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    padding: 10px 20px;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .slide-info h1 {
-    font-size: 1.5rem;
-  }
-
-  .slide-info p {
-    font-size: 0.95rem;
-  }
-
-  .navbar {
-    padding: 8px 15px;
-  }
-
-  .nav-links {
-    gap: 10px;
-  }
 }
